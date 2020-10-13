@@ -6,5 +6,5 @@ Open a Shell using bluetooth HC-06 module
 
 
 Upcoming:
-*** EDUCATION PURPOSE ONLY: ***
+***EDUCATION PURPOSE ONLY:***
 HACKPI-RF --> Sniff 433 MHz signal frequency and transmit it back.
