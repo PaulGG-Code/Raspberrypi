@@ -8,6 +8,14 @@ Hardware:
 
 I’ll be using an HC-06 module as a Bluetooth transceiver. You can find it for less than 8E shipped on Amazon. This little module will act as a Bluetooth slave device that sends and receives serial data. There are only 4 pins to hook up, your standard ground and Vcc (3.3V) and the Tx/Rx Serial pins. The HC-06 Tx pin goes the Rpi Rx pin and the Rx pin on the Rpi Tx pin. 
 
+  **PINS Identification:
+
+**KEY: according to the data sheet, I need to pull­up this pin while power­on­reset of the module to enforce AT mode. We don't need it for this project!
+VCC is indicated in the range of 3.6V­6V. The module worked for me both with 3.3V and 5V.
+GND: Ground
+TXD: serial output of the module, to be connected to RX of the microcontroller. Note that this signal is using 3.3V logic level
+RXD: serial input of the module, to be connected to the TX of the microcontroller. Note that this signal is using 3.3V logic levels.
+
 Software:
 
 The hardware was pretty simple,  now let’s tackle software. I’ll go over the main parts and then post the entire script at the end.
