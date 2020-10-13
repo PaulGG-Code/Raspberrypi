@@ -10,11 +10,15 @@ I’ll be using an HC-06 module as a Bluetooth transceiver. You can find it for 
 
   **PINS Identification:**
 
-**KEY: according to the data sheet, I need to pull­up this pin while power­on­reset of the module to enforce AT mode. We don't need it for this project!
-VCC is indicated in the range of 3.6V­6V. The module worked for me both with 3.3V and 5V.
-GND: Ground
-TXD: serial output of the module, to be connected to RX of the microcontroller. Note that this signal is using 3.3V logic level
-RXD: serial input of the module, to be connected to the TX of the microcontroller. Note that this signal is using 3.3V logic levels.**
+**_KEY: According to the data sheet, I need to pull­up this pin while power­on­reset of the module to enforce AT mode. We don't need it for this project!_**
+
+**_VCC: Indicated in the range of 3.6V­6V. The module worked for me both with 3.3V and 5V._**
+
+**_GND: Ground_**
+
+**_TXD: Serial output of the module, to be connected to RX of the microcontroller. Note that this signal is using 3.3V logic level_**
+
+**_RXD: Serial input of the module, to be connected to the TX of the microcontroller. Note that this signal is using 3.3V logic levels._**
 
 Software:
 
