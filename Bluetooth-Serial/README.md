@@ -12,7 +12,11 @@ Software:
 
 The hardware was pretty simple,  now let’s tackle software. I’ll go over the main parts and then post the entire script at the end.
 
-We are going to be controlling the serial port using a Python script. If you haven’t already, install the Python Serial library just run sudo apt-get install python-serial to install it.
+We are going to be controlling the serial port using a Python script. If you haven’t already, install the Python Serial library just to install it run  
+``` 
+sudo apt-get install python-serial 
+
+``` 
 
 Our Python script will have 2 main jobs:
 
@@ -22,4 +26,4 @@ Our Python script will have 2 main jobs:
 Usage: 
 
 Now that you have your hardware hooked up and your Python script is running on your Pi, you will need to connect to it using a Bluetooth terminal app. I used BlueTerm for IOS. 
-Once you open the app search for the HC-06 and connect to it. If there is an option to add line termination characters (usually either “\n ” or “\r\n”) you will get more consistent performance. You can now type any commands you want in your app and see the result. You can even create and edit files. Interactive terminal programs like Vim likely won’t work however. One final step you might want to do to actually use this in the field is to start your Python script when the Pi boots up. To do this just add a command to start the script in the /etc/rc.local file. For example, adding the line: python ~/BluetoothTerm.py and your script will start running when your Pi boots up.
+Once you open the app search for the HC-06 and connect to it. If there is an option to add line termination characters (usually either “\n ” or “\r\n”) you will get more consistent performance. You can now type any commands you want in your app and see the result. You can even create and edit files. Interactive terminal programs like Vim likely won’t work however. One final step you might want to do to actually use this in the field is to start your Python script when the Pi boots up. To do this just add a command to start the script in the ``` /etc/rc.local ``` file. For example, adding the line:``` python ~/BluetoothTerm.py ``` and your script will start running when your Pi boots up.
